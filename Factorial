@@ -1,0 +1,13 @@
+import java.util.*;
+  public class Factorial{
+    public static void main(String[] args){
+    int i;
+    System.out.println("请输入需要计算阶乘的正整数：");
+      Scanner input=new Scanner(System.in);
+      i=input.nextInt();
+      System.out.println(i+"的阶乘等于："+fac(i));}
+     public static long fac(int n){
+     if(n==1)
+     return 1;
+     else
+     {return n*fac(n-1);}}}
